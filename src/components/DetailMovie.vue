@@ -14,9 +14,9 @@ const re = /<\/?[^>]+(>|$)/gi
       backgroundImage: `url(${props.selectedMovie.show.image.original})`,
     }"
     :class="'animate-slide-in'"
-    class="bg-cover bg-center dark:bg-[rgba(0,0,0,0.5)] dark:bg-blend-darken bg-blend-lighten bg-[rgba(255,255,255,0.5)] min-h-[17rem]"
+    class="bg-cover bg-center dark:bg-[rgba(0,0,0,0.5)] dark:bg-blend-darken bg-blend-lighten bg-[rgba(255,255,255,0.5)] min-h-[17rem] md:h-screen"
   >
-    <div class="backdrop-blur-2xl min-h-[17rem] h-full">
+    <div class="backdrop-blur-2xl h-full">
       <div class="container mx-auto flex flex-col md:flex-row gap-3 md:gap-0 justify-start pt-4 pb-1.5">
         <div class="px-2 relative cursor-pointer group overflow-hidden self-start">
           <img :src="props.selectedMovie.show.image.medium" class="w-40" />

@@ -8,7 +8,7 @@ import DetailMovie from "./DetailMovie.vue"
 const movies = ref([])
 const selectedMovie = ref(null)
 
-const url = "http://api.tvmaze.com/search/shows?q=girls"
+const url = "https://api.tvmaze.com/search/shows?q=girls"
 const res = await axios.get(url)
 
 movies.value = res.data
